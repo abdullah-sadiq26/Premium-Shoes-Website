@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fully 3D Shose website</title>
+
+    <!----=========== CSS link  ===========-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!----=========== Locomotive CSS cdn link  ===========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+
+    <!----=========== Rimix icon CSS cdn link  ===========-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <!----=========== Swiper CSS cdn link  ===========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!----=========== Loader ===========-->
+    <div class="loader">
+      <div class="circle">
+        <div class="inside">
+          <h2>Loading</h2>
+          <p id="percent">0%</p>
+        </div>
+      </div>
+    </div>
+    <!----=========== Loader ===========-->
+
+    <!----=========== Navbar ===========-->
+    <header>
+      <nav class="navbar">
+        <div class="logo"><img src="images/shoes logo.png" alt="logo" /></div>
+
+        <ul class="links">
+          <li><a href="#link-page1" class="active">Home</a></li>
+          <li><a href="#link-page2">Features</a></li>
+          <li><a href="#link-page3">Spotlight</a></li>
+          <li><a href="#link-page4">Collection</a></li>
+          <li><a href="#link-page5">Reviews</a></li>
+          <li><a href="#link-page6">Contact</a></li>
+        </ul>
+        <button class="nav-btn">
+          Shopping
+          <span class="shopping-icon"><i class="ri-shopping-cart-2-line"></i></span>
+        </button>
+      </nav>
+    </header>
+    <!----=========== Navbar ===========-->
+
+    <!----=========== Scroll Progress ===========-->
+    <div class="scroll-progress"></div>
+    <!----=========== Scroll Progress ===========-->
+
+    <!----=========== Main Content ===========-->
+    <div id="main">
+      <!----=========== Page One Start  ===========-->
+      <section id="link-page1">
+        <div id="page1">
+          <canvas></canvas>
+          <div class="text-center-flex">
+            <div class="left-content">
+              <h6>STEP INTO</h6>
+              <h2>STYLE</h2>
+              <p>Premium quality. Modren design Built for comfort. Made for you</p>
+              <button>EXPLORE COLLECTION <i class="ri-arrow-right-line"></i></button>
+            </div>
+            <div class="center-content">
+              <div class="mouse-icon">
+                <i class="ri-mouse-line"></i>
+              </div>
+              <i class="ri-arrow-down-double-line arrow-icon"></i>
+            </div>
+            <div class="right-content">
+              <div class="text-center-box">
+                <div class="text-center-icon">
+                  <i class="ri-leaf-line"></i>
+                </div>
+                <div class="text-center-box-content">
+                  <h3>LIGHTWEIGHT</h3>
+                  <p>Move faster with ultra-light comfort.</p>
+                </div>
+              </div>
+              <div class="text-center-box">
+                <div class="text-center-icon">
+                  <i class="ri-shield-flash-line"></i>
+                </div>
+                <div class="text-center-box-content">
+                  <h3>DURABLE</h3>
+                  <p>Built tough for every challenge.</p>
+                </div>
+              </div>
+              <div class="text-center-box">
+                <div class="text-center-icon">
+                  <i class="ri-stack-line"></i>
+                </div>
+                <div class="text-center-box-content">
+                  <h3>CUSHIONED</h3>
+                  <p>Superior cushioning for all-day comfort.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-right can-1">
+            <h2>UNLEASH YOUR PERFORMANCE.</h2>
+            <p>Premium quality sneakers designed for ultimate comfort and built for maximum endurance. Engineered for those who never stop.</p>
+          </div>
+          <div class="text-left can-2">
+            <h2>WHY CHOOSE US?</h2>
+            <p>
+              ⚡ Lightweight & Ultra-Flexible<br />
+              🛡️ High Impact Cushioning<br />
+              🔥 Breathable Mesh Tech
+            </p>
+          </div>
+          <div class="text-right can-3">
+            <h2>CRAFTED FOR ENDURANCE.</h2>
+            <p>Built with high-grade synthetic leather and an air-cushioned sole unit that gives high energy return with every step.</p>
+          </div>
+          <div class="text-left can-4">
+            <h2>READY TO STEP UP?</h2>
+            <p>Explore our limited collection now. Get free express delivery and a 30-day money-back guarantee.</p>
+          </div>
+        </div>
+      </section>
+      <!----=========== Page One End ===========-->
+
+      <!----=========== Page Tow Start  ===========-->
+      <section id="link-page2">
+        <div id="page2">
+          <div class="page2-container">
+            <h1>Features</h1>
+            <p>Precision design tailored for durability and ultimate comfort.</p>
+            <div class="page2-center-content">
+              <img id="page2-img1" src="images/shoes diagram.png" alt="diagram" />
+              <img id="page2-img2" src="images/hero shoes img.png" alt="shoes" />
+              <div class="shoes-model">
+                <model-viewer
+                  id="viewer"
+                  alt="3d modal"
+                  src="3d modal/3d modal.glb"
+                  camera-controls
+                  auto-rotate
+                  shadow-intensity="1.4"
+                  exposure="1.2"
+                  environment-image="neutral"
+                  tone-mapping="commerce"
+                  camera-orbit="90deg 90deg"
+                ></model-viewer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----=========== Page TowS End  ===========-->
+
+      <!----=========== Page Three Start  ===========-->
+      <section id="link-page3">
+        <div id="page3">
+          <div class="page3-container">
+            <div class="page3-left-content">
+              <h5>PRODUCT SPORTLIGHT</h5>
+              <h1>SEE IT.<br /><span>LOVE IT.</span></h1>
+              <p>Experience the Nike Air Max Future in action.<br />Watch,explore feelthe difference.</p>
+              <div class="page3-video">
+                <video src="Videos/shoes ads video.mp4"></video>
+                <i class="ri-play-mini-fill play-btn"></i>
+                <i class="ri-pause-mini-line pause-btn hidden"></i>
+              </div>
+              <div class="video-title">
+                <i class="ri-play-large-fill play-btn2"></i>
+                <div class="video-title-heading">
+                  <h3>Watch Product Video</h3>
+                  <p>See the Nike Air Max Future in action</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="page3-right-content">
+              <div class="page3-card">
+                <div class="page3-card-image">
+                  <img src="images/page3 card bg img.png" alt="" />
+                  <img id="page3-img1" src="images/hero shoes img.png" alt="shoes" />
+                  <div class="shoes-model2">
+                    <model-viewer
+                      id="viewer2"
+                      alt="3d modal"
+                      src="3d modal/3d modal.glb"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1.4"
+                      exposure="1.2"
+                      environment-image="neutral"
+                      tone-mapping="commerce"
+                      camera-orbit="90deg 90deg"
+                    ></model-viewer>
+                  </div>
+                </div>
+                <div class="page3-card-title">
+                  <h2>Nike Air Max Future</h2>
+                  <span><small>$</small>180</span>
+                  <p>Designed for high-performance athetes needing versatility and speed.</p>
+                  <button>Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----=========== Page Three End  ===========-->
+
+      <!----=========== Page Four Start  ===========-->
+      <section id="link-page4">
+        <div id="page4">
+          <div class="page4-container">
+            <h6>EXPLORE THE COLLECTION</h6>
+            <h1>BUILT TO PERFORM</h1>
+            <p>Swipe to explore. Engineered for comfort. Design for style.</p>
+
+            <div class="swiper1">
+              <div class="swiper-wrapper">
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img1.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img2.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img3.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img4.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img5.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img6.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img7.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img8.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img9.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page4-card swiper-slide">
+                  <div class="my-heart">
+                    <i class="ri-poker-hearts-line un-fill"></i>
+                    <i class="ri-poker-hearts-fill fill hidden2"></i>
+                  </div>
+                  <div class="page4-images">
+                    <img id="page4Image1" src="images/shoes img10.png" alt="shoes" />
+                    <img id="page4Image2" src="images/page3 card bg img.png" alt="card bg" />
+                  </div>
+                  <div class="page4-title">
+                    <div class="page4-2item-flex">
+                      <div class="div">
+                        <h2>Nike Air Max 270</h2>
+                        <p>Blue Glow</p>
+                      </div>
+                      <small>$<span>180</span></small>
+                    </div>
+                    <button>
+                      BUY NOW <span><i class="ri-arrow-right-long-line"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----=========== Page Four End  ===========-->
+
+      <!----=========== Page Five Start  ===========-->
+      <section id="link-page5">
+        <div id="page5">
+          <div class="page5-container">
+            <h6>CUSTOMER REVIEWS</h6>
+            <h1><span>LOVED BY</span> SNEAKERHEADS</h1>
+            <p>Real pepole. Real experience. See what our community has to say.</p>
+
+            <div class="swiper2">
+              <div class="swiper-wrapper">
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/men img1.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img1.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/female img1.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img2.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/men img2.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img3.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/female img2.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img4.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/men img3.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img5.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/female img3.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img6.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/men img4.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img7.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/female img4.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img8.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/men img5.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img9.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page5-card swiper-slide">
+                  <div class="page5-first-col">
+                    <div class="page5-first-col-flex">
+                      <img src="images/female img5.jfif" alt="men" />
+                      <div>
+                        <h3>Ali Khan</h3>
+                        <p>Verified buyer<i class="ri-checkbox-blank-circle-fill"></i></p>
+                      </div>
+                    </div>
+                    <i class="ri-double-quotes-l quotes"></i>
+                  </div>
+
+                  <div class="page5-second-col">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+
+                    <p>"Styling, sleek and premium quality. Totally worth it!" I get compliments everywhere.</p>
+                  </div>
+
+                  <div class="page5-third-col">
+                    <img src="images/shoes img10.png" alt="shoes" />
+                    <div>
+                      <h3>Air Max Pulse</h3>
+                      <p>Blue Glow</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----=========== Page Five  ===========-->
+      <section id="link-page6">
+        <div id="page6">
+          <div class="page6-container">
+            <div class="page6-first-col">
+              <h6>STEP UP YOUR GAME</h6>
+              <h1><span>BUILT FOR</span> BEYOND.</h1>
+              <p>
+                Explore the collection and find the project pair <br />
+                that moves with you.
+              </p>
+              <button>EXPLORE COLLECTION <i class="ri-arrow-right-long-line"></i></button>
+            </div>
+
+            <div class="page6-second-col">
+              <div class="page6-one-child-col">
+                <img src="images/shoes logo.png" alt="logo" />
+                <ul>
+                  <li>Pushing boundaries.</li>
+                  <li>Readefining performance.</li>
+                  <li>Built for the future.</li>
+                </ul>
+                <div class="social-media-icons">
+                  <a href="#"><i class="ri-instagram-line"></i></a>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                  <a href="#"> <i class="ri-youtube-fill"></i></a>
+                  <a href="#"><i class="ri-mail-line"></i></a>
+                </div>
+              </div>
+
+              <div class="page6-tow-child-col">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#link-page1">Home</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#link-page2">Features</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#link-page3">Spotlight</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#link-page4">Collection</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#link-page5">Reviews</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#link-page6">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="page6-three-child-col">
+                <h2>SHOP</h2>
+                <ul>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">All Shop</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">New Releases</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Best Sellers</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Men</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Women</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Accessories</a></li>
+                </ul>
+              </div>
+
+              <div class="page6-four-child-col">
+                <h2>SUPPORT</h2>
+                <ul>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Help Center</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Shipping & Delivery</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Returns & Refunds</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Size Guide</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Track Order</a></li>
+                  <li><i class="ri-arrow-right-s-line"></i><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+
+              <div class="page6-five-child-col">
+                <h2>CONTACT US</h2>
+                <ul>
+                  <li>
+                    <a href="#"><i class="ri-mail-line"></i> hello@nike.com</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-phone-fill"></i>+92 (123) 456789</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-map-pin-2-line"></i>123 Nike Street,<span>New York, USA</span></a>
+                  </li>
+                </ul>
+                <div class="footer-input">
+                  <input type="email" placeholder="Enter your email" autocomplete="off" />
+                  <button type="submit"><i class="ri-arrow-right-long-line"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="page6-third-col">
+              <p>&copy; 2026 Nike, Inc All Right Reserved</p>
+              <div class="footer-btn">
+                <span>Back to Top</span>
+                <a href="#link-page1"> <i class="ri-arrow-up-long-line"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!----=========== Main Content ===========-->
+
+    <!----=========== Swiper JS cdn link  ===========-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <!----=========== Main Content ===========-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <!----=========== Locomotive JS cdn link  ===========-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!----=========== GSAP scrolltrigger cdn link  ===========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"></script>
+
+    <!----=========== GSAP JS cdn link  ===========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+
+    <!----=========== GSAP script file link  ===========-->
+    <script src="script.js"></script>
+  </body>
+</html>
